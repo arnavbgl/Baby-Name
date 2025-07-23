@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo, Suspense, lazy } from "react";
-import Header from "./components/Header.jsx";
-import NameCard from "./components/NameCard.jsx";
+import Header from "./Header.jsx";
+import NameCard from "./NameCard.jsx";
 import babyNamesData from './data/babyNamesData.json';
 import "./App.css";
 
