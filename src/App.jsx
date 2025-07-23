@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo, Suspense, lazy } from "react";
 import Header from "./components/Header.jsx";
 import NameCard from "./components/NameCard.jsx";
-import babyNamesData from '../data/babyNamesData.json';
+import babyNamesData from './data/babyNamesData.json';
 import "./App.css";
 
 const NameModal = lazy(() => import('./components/NameModal.jsx'));
