@@ -170,15 +170,16 @@ function App() {
         }
     };
 
-    useEffect(() => {
-        if (process.env.NODE_ENV !== 'production') {
-            console.log("Current theme:", activeTheme);
-            console.log("Filtered names count:", filteredNames.length);
-            console.log("Displayed names count:", displayedNames.length);
-            console.log("Is Discover populated:", isDiscoverPopulated);
-            console.log("Discover category size:", allNames.Discover ? allNames.Discover.length : 0);
-        }
-    }, [activeTheme, filteredNames, displayedNames, isDiscoverPopulated, allNames.Discover]);
+   useEffect(() => {
+    if (process.env.NODE_ENV !== 'production') {
+        console.log("Current theme:", activeTheme);
+        console.log("Filtered names count:", filteredNames.length);
+        console.log("Displayed names count:", displayedNames.length);
+        console.log("Is Discover populated:", isDiscoverPopulated);
+        console.log("Discover category size:", allNames.Discover ? allNames.Discover.length : 0);
+    }
+});
+ [activeTheme, filteredNames, displayedNames, isDiscoverPopulated, allNames.Discover]);
 
     const hasMoreNames = filteredNames.length > displayedNames.length;
 
