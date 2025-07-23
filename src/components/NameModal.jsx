@@ -4,7 +4,7 @@ import NameCard from "./NameCard.jsx";
 import babyNamesData from './data/babyNamesData.json';
 import "./App.css";
 
-const NameModal = lazy(() => import('./components/NameModal.jsx'));
+const NameModal = lazy(() => import('../components/NameModal.jsx'));
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(false);
